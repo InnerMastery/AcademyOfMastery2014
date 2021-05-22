@@ -41,6 +41,7 @@ for path, dirs, files in os.walk(ROOT):
 #                    raise ValueError
             with open(fullpath, 'w', encoding='utf-8') as f:
                 f.write(frameTop + content + frameBot)
+print()
 print(failed_search)
 print('\nfails:')
 for fail in fails:
